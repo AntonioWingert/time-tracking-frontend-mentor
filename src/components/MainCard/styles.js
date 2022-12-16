@@ -9,6 +9,11 @@ export const Container = styled.div`
   height: 100%;
   background-color: ${({theme}) => theme.colors.darkBlue};
   border-radius: 5%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 50%;
+  }
 `;
 
 export const MainContent = styled.div`
@@ -33,6 +38,21 @@ export const MainContent = styled.div`
   h1 {
     font-weight: 400;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    h1 {
+      font-size: 25px;
+    }
+
+    img {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const TimeContainer = styled.div`
@@ -52,5 +72,11 @@ export const TimeContainer = styled.div`
 
   .active {
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 `;

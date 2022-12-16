@@ -29,6 +29,12 @@ export const Container = styled.div`
   justify-content: center;
   width: 80vw;
   height: 50vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+    height: 60vh;
+  }
 `;
 
 export const CardsContainer = styled.div`
@@ -39,4 +45,11 @@ export const CardsContainer = styled.div`
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 `;

@@ -9,8 +9,10 @@ function index() {
     <Container>
       <MainContent >
         <img src={profile} alt="image-jeremy" width="60px"/>
-        <p>Report for</p>
-        <h1>Jeremy Robson</h1>
+        <div>
+          <p>Report for</p>
+          <h1>Jeremy Robson</h1>
+        </div>
       </MainContent>
       <TimeContainer>
         <Link to="/" className={pathname === '/' ? 'active' : null}>Daily</Link>

@@ -25,8 +25,10 @@ function index({title, icon, current, previous, timeframe}) {
           <p>{title}</p>
           <span>...</span>
         </div>
-        <h1>{current}hrs</h1>
-        <h3>Last {timeframe} - {previous}hrs</h3>
+        <div className='hours'>
+          <h1>{current}hrs</h1>
+          <h3>Last {timeframe} - {previous}hrs</h3>
+        </div>
       </MainContent>
     </Container>
   );

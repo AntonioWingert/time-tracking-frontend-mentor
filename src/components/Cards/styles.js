@@ -13,6 +13,11 @@ export const Container = styled.div`
   height: 47%;
   width: 18vw;
   border-radius: 5%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 40%;
+  }
 `;
 
 export const MainContent = styled.div`
@@ -28,16 +33,23 @@ export const MainContent = styled.div`
   border-radius: 4%;
   gap: .8rem;
 
-  div {
+  > div {
     display: flex;
     width: 100%;
     justify-content: space-between;
     font-weight: 500;
     font-size: 18px;
 
+
     span {
       cursor: pointer;
     }
+  }
+
+  > .hours {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   h1 {
@@ -48,6 +60,32 @@ export const MainContent = styled.div`
   h3 {
     font-weight: 300;
     font-size: 18px;
+  }
+
+  @media (max-width: 768px) {
+    .hours {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 1117px) {
+    .hours {
+
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      h3 {
+        font-size: 15px;
+      }
+    }
   }
 
 `;

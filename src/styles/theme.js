@@ -15,10 +15,6 @@ const theme = {
   typography: {
     fontSize: '1.125rem',
   },
-  display: {
-    mobile: '375px',
-    desktop: '1440px',
-  }
 };
 
 export default theme;
