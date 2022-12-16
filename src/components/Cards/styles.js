@@ -61,20 +61,7 @@ export const MainContent = styled.div`
     font-weight: 300;
     font-size: 18px;
   }
-
-  @media (max-width: 768px) {
-    .hours {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-
-      h1 {
-        font-size: 2.5rem;
-      }
-    }
-  }
-
+  
   @media (max-width: 1117px) {
     .hours {
 
@@ -87,6 +74,20 @@ export const MainContent = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .hours {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
 
 `;
 
